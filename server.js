@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000; // Use Railway's assigned port
 
 app.use(cors());
 app.use(express.json());
@@ -12,11 +12,12 @@ app.get("/health", (req, res) => {
   res.json({ status: "Railway is working fine!" });
 });
 
-// Catch-all route to test server response
+// Main Route
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to the Railway test server!" });
 });
 
-app.listen(PORT, () => {
+// Start Server and Listen on 0.0.0.0
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server is running on port ${PORT}`);
 });
