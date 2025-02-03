@@ -1,0 +1,114 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full-Page Container */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: #d4edc9; /* Light green background */
+  text-align: center;
+}
+
+/* Title Styling */
+.about-title {
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 30px 0;
+  color: #2f4f2f;
+}
+
+/* Content Layout */
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 50px;
+}
+
+/* Image Styling */
+.about-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Section */
+.about-text {
+  max-width: 100%;
+  text-align: left;
+  font-size: 1.5rem;
+  color: #2f4f2f;
+}
+
+.about-text h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* Media Queries */
+@media (min-width: 600px) {
+  .about-title {
+    font-size: 3.5rem;
+  }
+
+  .about-content {
+    flex-direction: row;
+  }
+
+  .about-image {
+    max-width: 50%;
+  }
+
+  .about-text {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-title {
+    font-size: 4rem;
+  }
+
+  .about-text {
+    font-size: 1.7rem;
+  }
+
+  .about-text p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-title {
+    font-size: 4.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-title {
+    font-size: 5rem;
+  }
+
+  .about-text {
+    font-size: 1.8rem;
+  }
+
+  .about-text p {
+    font-size: 1.4rem;
+  }
+}

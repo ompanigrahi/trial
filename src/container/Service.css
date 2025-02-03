@@ -1,0 +1,7 @@
+.service h1 {
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.service h2 {
+    text-shadow: 2px 3px 4px rgba(131, 130, 130, 0.5);
+}
